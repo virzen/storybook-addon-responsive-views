@@ -56,7 +56,7 @@ export class Decorator extends Component {
   }
 
   renderStory = () => {
-    return <div style={{ margin: 15 }}>{this.story}</div>
+    return <div>{this.story}</div>
   }
 
   renderViews = () => {
