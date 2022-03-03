@@ -38,7 +38,7 @@ export class Decorator extends Component {
   }
 
   state = {
-    enableViews: true,
+    enableViews: null,
   }
 
   componentDidMount() {
@@ -69,7 +69,15 @@ export class Decorator extends Component {
 
   render() {
     const { enableViews } = this.state
-    return enableViews ? this.renderViews() : this.renderStory()
+
+    switch (enableViews) {
+      case true:
+        return this.renderViews()
+      case false:
+        return this.renderStory()
+      case null:
+        return null
+    }
   }
 }
 
