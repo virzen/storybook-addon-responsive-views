@@ -6,9 +6,9 @@ This is a fork of [vizeat/storybook-addon-responsive-views](https://github.com/v
 1) it didn't work in latest storybook,
 2) it had some arbitrary values hardcoded.
 
-## Original description
-
 I'm publishing it for my use, but as soon as the original maintainer becomes active I'm fine with takin it down.
+
+## Original description
 
 View your Storybook stories in a range of responsive viewports
 
