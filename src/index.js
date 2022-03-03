@@ -26,15 +26,13 @@ export class Decorator extends Component {
   constructor(props) {
     super(props)
 
-    const { channel, story } = props
+    const { channel } = props
 
     if (channel) {
       this.channel = channel
     } else {
       this.channel = addons.getChannel()
     }
-
-    this.story = story
   }
 
   state = {
@@ -49,32 +47,15 @@ export class Decorator extends Component {
     })
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.story !== prevProps.story) {
-      this.story = this.props.story
-    }
-  }
-
-  renderStory = () => {
-    return <div>{this.story}</div>
-  }
-
-  renderViews = () => {
-    return (
-      <>
-        <ResponsiveView breakpoints={this.props.breakpoints}>{this.story}</ResponsiveView>
-      </>
-    )
-  }
-
   render() {
+    const { story } = this.props
     const { enableViews } = this.state
 
     switch (enableViews) {
       case true:
-        return this.renderViews()
+        return <ResponsiveView breakpoints={this.props.breakpoints}>{story}</ResponsiveView>
       case false:
-        return this.renderStory()
+        return story
       case null:
         return null
     }
