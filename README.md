@@ -1,4 +1,10 @@
-# storybook-addon-responsive-views
+# @virzen/storybook-addon-responsive-views
+
+This is a fork of [vizeat/storybook-addon-responsive-views](https://github.com/vizeat/storybook-addon-responsive-views). It was created for two reasons:
+1) it didn't work in latest storybook,
+2) it had some arbitrary values hardcoded.
+I'm publishing it for my use, but as soon as the original maintainer becomes active I'm fine with takin it down.
+
 View your Storybook stories in a range of responsive viewports
 
 When developing responsive applications, it's often the edges of breakpoints which cause the most issues. This Storybook addon lets you preview your components/stories at a variety of breakpoints, so that you can be sure that your webapp will look great no matter what screen size ✨
