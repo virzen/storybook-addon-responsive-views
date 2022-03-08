@@ -7,10 +7,10 @@
     "responsive",
     "storybook"
   ],
-  "author": "vizeat",
-  "homepage": "https://github.com/vizeat/storybook-addon-responsive-views",
+  "author": "virzen",
+  "homepage": "https://github.com/virzen/storybook-addon-responsive-views",
   "bugs": {
-    "url": "https://github.com/vizeat/storybook-addon-responsive-views/issues"
+    "url": "https://github.com/virzen/storybook-addon-responsive-views/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -22,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/vizeat/storybook-addon-responsive-views.git"
+    "url": "https://github.com/virzen/storybook-addon-responsive-views.git"
   },
   "license": "MIT",
   "main": "dist/index.js",
